@@ -289,8 +289,8 @@ public class AlarmClock {
                         + "(\"AlarmClockItemHour\", \"AlarmClockItemMinute\", \"AlarmClockItemName\")"
                         + "VALUES (?, ?, ?);"
                 );
-                preparedStatement.setInt(1, minute);
-                preparedStatement.setInt(2, hour);
+                preparedStatement.setInt(1, hour);
+                preparedStatement.setInt(2, minute);
                 preparedStatement.setString(3, name);
                 return preparedStatement.executeUpdate();
             }
